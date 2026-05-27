@@ -1,0 +1,84 @@
+<!-- =========================
+Header
+===========================-->
+<header>
+  <div
+    class="header-one lp:max-w-[1290px]! {=$class} fixed top-5 left-1/2 z-50 mx-auto flex w-full max-w-[350px] -translate-x-1/2 items-center justify-between rounded-2xl bg-white px-2.5 py-2.5 backdrop-blur-[25px] min-[425px]:max-w-[375px] min-[500px]:max-w-[450px] sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1140px] xl:py-0"
+    data-opai-animate
+    data-instant
+    data-direction="up"
+    data-offset="100"
+  >
+    <div>
+      <a href="./index.html">
+        <span class="sr-only">Home</span>
+        <figure class="hidden lg:block lg:max-w-[198px]">
+          <img src="./images/shared/main-logo.svg" alt="Rozdi Agency" class="w-full" />
+        </figure>
+        <figure class="block max-w-[44px] lg:hidden">
+          <img src="./images/shared/logo.svg" alt="Rozdi Agency" class="block w-full" />
+          <img src="./images/shared/logo-dark.svg" alt="Rozdi Agency" class="hidden w-full" />
+        </figure>
+      </a>
+    </div>
+    <nav class="hidden items-center xl:flex">
+      <ul class="flex items-center gap-x-2">
+        <li class="nav-item cursor-pointer py-2.5">
+          <a
+            href="./index.html"
+            class="hover:border-stroke-2/60 text-tagline-2 font-sora text-background-13/60 hover:text-background-13 rounded-full border border-transparent px-4 py-2 font-normal transition-all duration-200"
+          >
+            <span>Home</span>
+          </a>
+        </li>
+        <li class="nav-item cursor-pointer py-2.5">
+          <a
+            href="./about.html"
+            class="hover:border-stroke-2/60 text-tagline-2 font-sora text-background-13/60 hover:text-background-13 rounded-full border border-transparent px-4 py-2 font-normal transition-all duration-200"
+          >
+            <span>About Us</span>
+          </a>
+        </li>
+        <li class="nav-item cursor-pointer py-2.5">
+          <a
+            href="./services.html"
+            class="hover:border-stroke-2/60 text-tagline-2 font-sora text-background-13/60 hover:text-background-13 rounded-full border border-transparent px-4 py-2 font-normal transition-all duration-200"
+          >
+            <span>Services</span>
+          </a>
+        </li>
+        <li class="nav-item cursor-pointer py-2.5">
+          <a
+            href="./case-study.html"
+            class="hover:border-stroke-2/60 text-tagline-2 font-sora text-background-13/60 hover:text-background-13 rounded-full border border-transparent px-4 py-2 font-normal transition-all duration-200"
+          >
+            <span>Case Studies</span>
+          </a>
+        </li>
+        <li class="nav-item cursor-pointer py-2.5">
+          <a
+            href="./blog.html"
+            class="hover:border-stroke-2/60 text-tagline-2 font-sora text-background-13/60 hover:text-background-13 rounded-full border border-transparent px-4 py-2 font-normal transition-all duration-200"
+          >
+            <span>Research Papers</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="hidden items-center justify-center xl:flex">
+      <Component src="src/components/shared/navbar/nav-button.htm" />
+    </div>
+    <div class="block xl:hidden">
+      <button
+        class="nav-hamburger bg-background-4 flex size-12 cursor-pointer flex-col items-center justify-center gap-[5px] rounded-full"
+      >
+        <span class="sr-only">Menu</span>
+        <span class="block h-0.5 w-6 bg-white/80"></span>
+        <span class="block h-0.5 w-6 bg-white/80"></span>
+        <span class="block h-0.5 w-6 bg-white/80"></span>
+      </button>
+    </div>
+  </div>
+  <Component src="src/components/shared/mobile-menu.htm" />
+</header>

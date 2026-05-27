@@ -1,0 +1,56 @@
+import LinkPrimary from "@/components/shared/LinkPrimary";
+
+const CTA = () => {
+  return (
+    <section className="py-[80px] lg:py-[112px]" aria-labelledby="cta-heading">
+      <div className="main-container overflow-hidden">
+        <div
+          data-opai-animate
+          data-delay="0.1"
+          className="flex flex-col items-center justify-between gap-x-[22px] rounded-3xl bg-white px-8 pt-20 md:px-0 md:pl-[80px] lg:h-[496px] lg:flex-row lg:pt-0 xl:pl-[112px]"
+        >
+          {/* content */}
+          <div className="space-y-12 text-center lg:text-left">
+            <div className="space-y-3">
+              <h2
+                data-text-reveal
+                className="font-sora lg:text-sora-heading-2 text-sora-heading-3 text-background-13/90 w-full max-w-[567px] font-normal"
+              >
+                Elevate your business with intelligent solutions
+              </h2>
+              <p
+                data-text-reveal
+                data-delay="0.2"
+                className="font-inter-tight text-tagline-2 text-background-13/50 mx-auto max-w-[400px] font-normal lg:mx-0"
+              >
+                Connect with us to explore how Rozdi Agency can solve your biggest challenges.
+              </p>
+            </div>
+
+            <div data-opai-animate data-delay="0.3">
+              <LinkPrimary
+                buttonText="Learn more"
+                href="/services"
+              />
+            </div>
+          </div>
+
+          <div
+            data-opai-animate
+            data-delay="0.4"
+            className="mt-10 -mr-8 ml-auto w-full max-w-[550px] overflow-hidden rounded-b-2xl md:mr-0 lg:mr-auto xl:mt-0 xl:max-w-[589px]"
+          >
+            <img
+              src="/images/opai-img-22.png"
+              alt="Rozdi Agency intelligent business solutions illustration"
+              className="size-full object-cover"
+              itemProp="image"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default CTA;

@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@import "./styles/variable.css";
+@import "./styles/common.css";
+@import "./styles/typography.css";
+@import "./styles/icon-fonts.css";
+@import "./styles/header.css";
+@import "./styles/navigation-menu.css";
+@import "./styles/vendor/vanilla-infinite-marquee.min.css";
+@import "./styles/stack-cards.css";

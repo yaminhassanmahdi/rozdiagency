@@ -1,0 +1,147 @@
+import TestimonialCard from "@/components/shared/TestimonialCard";
+
+const Testimonial = () => {
+  const testimonials = [
+    {
+      content: "Rozdi Agency has sped up our platform development, allowing us to launch custom tech features in weeks!",
+      image: "/images/opai-avatar-img-275.png",
+      alt: "Jordan Smith, Tech Founder",
+      name: "Jordan Smith",
+      position: "Tech Founder",
+      className: "bg-white",
+      quoteClass: "text-background-13/90",
+      nameClass: "text-black",
+      positionClass: "text-background-13/60",
+    },
+    {
+      content: "Rozdi's Google & Meta ad campaigns have boosted our customer acquisition ROI by 150%!",
+      image: "/images/opai-avatar-img-276.png",
+      alt: "Mia Thompson, E-Commerce COO",
+      name: "Mia Thompson",
+      position: "E-Commerce COO",
+      className: "bg-white",
+      quoteClass: "text-background-13/90",
+      nameClass: "text-black",
+      positionClass: "text-background-13/60",
+    },
+    {
+      content: "Integrating custom AI workflows into our customer service has boosted operational efficiency tremendously!",
+      image: "/images/opai-avatar-img-03.png",
+      alt: "Alex Johnson, Customer Experience Lead",
+      name: "Alex Johnson",
+      position: "Customer Experience Lead",
+      className: "bg-white",
+      quoteClass: "text-background-13/90",
+      nameClass: "text-black",
+      positionClass: "text-background-13/60",
+    },
+    {
+      content: "Working with Rozdi Agency has been a game-changer. Their solutions helped us save hours of manual work every week!",
+      image: "/images/opai-avatar-img-274.png",
+      alt: "Cleton, Founder, E-Commerce",
+      name: "Cleton",
+      position: "Founder, E-Commerce",
+      className: "bg-background-1",
+      quoteClass: "text-white/90",
+      nameClass: "text-white",
+      positionClass: "text-white/60",
+    },
+    {
+      content: "Working with Rozdi Agency has been a game-changer. Their solutions helped us save hours of manual work every week!",
+      image: "/images/opai-avatar-img-278.png",
+      alt: "Cleton, Founder, GTH",
+      name: "Cleton",
+      position: "Founder, GTH",
+      className: "bg-background-1",
+      quoteClass: "text-white/90",
+      nameClass: "text-white",
+      positionClass: "text-white/60",
+    },
+    {
+      content: "Rozdi Agency's expertise in custom software and system integration is unmatched. We've seen tremendous results since partnering.",
+      image: "/images/opai-avatar-img-279.png",
+      alt: "Prutalod, SaaS Founder",
+      name: "Prutalod",
+      position: "SaaS Founder",
+      className: "bg-white",
+      quoteClass: "text-background-13/90",
+      nameClass: "text-black",
+      positionClass: "text-background-13/60",
+    },
+    {
+      content: "Custom web platforms, flawless support, and seamless API integrations. Highly recommend Rozdi Agency.",
+      image: "/images/opai-avatar-img-280.png",
+      alt: "Elena T., CTO",
+      name: "Elena T.",
+      position: "CTO",
+      className: "bg-white",
+      quoteClass: "text-background-13/90",
+      nameClass: "text-black",
+      positionClass: "text-background-13/60",
+    },
+    {
+      content: "We have revolutionized the logistics industry by implementing cutting-edge technology that not only streamlines operations but also significantly reduces costs. Our innovative solutions have empowered businesses to enhance their supply chain efficiency and achieve remarkable savings. As Oliver, our Operations Director, proudly states.",
+      image: "/images/opai-avatar-img-242.jpg",
+      alt: "Ethan Green, Operations Manager",
+      name: "Ethan Green",
+      position: "Operations Manager",
+      className: "bg-white",
+      quoteClass: "text-background-13/90 line-clamp-3 xl:line-clamp-none",
+      nameClass: "text-black",
+      positionClass: "text-background-13/60",
+      wrapperClass: "xl:col-span-6"
+    },
+    {
+      content: "Teaming up with Rozdi Agency has totally changed the game for us. Their tools save us so much time on manual tasks every week! We've been able to focus more on strategic projects and innovation, which has really boosted our productivity. Plus, the support from their team has been fantastic, making the transition seamless!",
+      image: "/images/opai-avatar-img-243.jpg",
+      alt: "Cleton, Founder, E-Commerce",
+      name: "Cleton",
+      position: "Founder, E-Commerce",
+      className: "bg-background-1",
+      quoteClass: "text-white/90 line-clamp-3 xl:line-clamp-none",
+      nameClass: "text-white",
+      positionClass: "text-white/60",
+      wrapperClass: "xl:col-span-6"
+    },
+  ];
+
+  return (
+    <section className="py-[80px] md:py-[120px] xl:py-[156px]" aria-labelledby="testimonials-heading">
+      <div className="main-container">
+        <div className="space-y-19">
+          <h2
+            data-text-reveal
+            className="text-sora-heading-3 lg:text-sora-heading-2 text-background-13/90 font-sora text-center font-normal"
+          >
+            What our clients say
+          </h2>
+
+          <div className="grid grid-cols-12 items-center justify-center gap-4 xl:gap-2">
+            {testimonials.map((testimonial, index) => (
+              <div
+                key={index}
+                data-opai-animate
+                data-delay={0.2 + index * 0.1}
+                className={`col-span-12 md:col-span-6 lg:col-span-4 ${testimonial.wrapperClass || "xl:col-span-3"}`}
+              >
+                <TestimonialCard
+                  content={testimonial.content}
+                  image={testimonial.image}
+                  alt={testimonial.alt}
+                  name={testimonial.name}
+                  position={testimonial.position}
+                  className={testimonial.className}
+                  quoteClass={testimonial.quoteClass}
+                  nameClass={testimonial.nameClass}
+                  positionClass={testimonial.positionClass}
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Testimonial;

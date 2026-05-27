@@ -1,0 +1,10 @@
+.stack-cards {
+  --stack-cards-gap: 24px;
+}
+
+.stack-cards__item {
+  top: calc(var(--spacing) * 28);
+  transform-origin: top;
+  position: sticky;
+  overflow: hidden;
+}
