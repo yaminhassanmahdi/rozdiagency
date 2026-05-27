@@ -41,15 +41,8 @@ const FamousBlog = () => {
               data-text-reveal
               className="font-sora text-sora-heading-4 md:text-sora-heading-3 lg:text-sora-heading-2 text-background-13/90 text-center font-normal"
             >
-              Don’t miss this
+              Stay informed, stay ahead
             </h2>
-            <p
-              data-text-reveal
-              data-delay="0.2"
-              className="font-inter-tight text-tagline-2 text-background-13/50 text-center font-normal"
-            >
-              5 AI Tools Every Business Needs to Streamline Operations
-            </p>
           </div>
           <div className="grid grid-cols-12 items-center justify-center gap-y-4 sm:gap-4">
             {blogs.map((blog, index) => (

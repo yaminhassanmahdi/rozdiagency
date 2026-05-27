@@ -20,11 +20,11 @@ const Header = () => {
           <Link href="/">
             <span className="sr-only">Home</span>
             <figure className="hidden lg:block lg:max-w-[198px]">
-              <img src="/images/shared/main-logo.svg" alt="Rozdi Agency" className="w-full" />
+              <img src="/images/logo/main-logo.svg" alt="Rozdi Agency" className="w-full" />
             </figure>
             <figure className="block max-w-[44px] lg:hidden">
-              <img src="/images/shared/logo.svg" alt="Rozdi Agency" className="block w-full" />
-              <img src="/images/shared/logo-dark.svg" alt="Rozdi Agency" className="hidden w-full" />
+              <img src="/images/logo/icon.svg" alt="Rozdi Agency" className="block w-full" />
+              <img src="/images/logo/icon.svg" alt="Rozdi Agency" className="hidden w-full" />
             </figure>
           </Link>
         </div>
@@ -100,7 +100,7 @@ const Header = () => {
             <Link href="/" onClick={() => setIsMobileMenuOpen(false)}>
               <span className="sr-only">Home</span>
               <figure className="max-w-[44px]">
-                <img src="/images/shared/logo.svg" alt="Rozdi Agency" className="block w-full" />
+                <img src="/images/logo/icon.svg" alt="Rozdi Agency" className="block w-full" />
               </figure>
             </Link>
             <button

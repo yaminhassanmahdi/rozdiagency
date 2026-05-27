@@ -13,7 +13,7 @@ const Footer = () => {
             <Link href="/" className="block">
               <span className="sr-only">Neural Networks</span>
               <figure className="h-[40px] w-[166px]">
-                <img src="/images/shared/dark-logo.svg" alt="logo" className="h-full w-full" />
+                <img src="/images/logo/main-logo.svg" alt="logo" className="h-full w-full" />
               </figure>
             </Link>
           </div>
