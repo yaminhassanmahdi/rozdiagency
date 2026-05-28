@@ -11,10 +11,6 @@ const Header = () => {
     <header>
       <div
         className="header-one lp:max-w-[1290px]! fixed top-5 left-1/2 z-50 mx-auto flex w-full max-w-[350px] -translate-x-1/2 items-center justify-between rounded-2xl bg-white px-2.5 py-2.5 backdrop-blur-[25px] min-[425px]:max-w-[375px] min-[500px]:max-w-[450px] sm:max-w-[540px] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1140px] xl:py-0"
-        data-opai-animate
-        data-instant
-        data-direction="up"
-        data-offset="100"
       >
         <div>
           <Link href="/">

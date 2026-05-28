@@ -6,18 +6,19 @@ import Footer from "@/components/Footer";
 import ClientInitializer from "@/components/ClientInitializer";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://rozdi.com"),
   title: "Rozdi Agency || Enterprise-Grade Technology & Marketing",
   description: "Rozdi helps businesses outsource world-class technology, AI automation, and marketing services at an affordable cost without the burden of building expensive in-house teams.",
   keywords: ["Rozdi", "Rozdi Agency", "Outsource Technology", "AI Automation", "Web Development", "Ecommerce Development", "SEO Services", "Google Ads", "Facebook Ads", "Growth Strategy"],
   authors: [{ name: "Rozdi Agency" }],
   openGraph: {
     type: "website",
-    url: "https://rozdi.agency",
+    url: "https://rozdi.com",
     title: "Rozdi Agency - Outsource Enterprise Technology & Marketing",
     description: "Rozdi combining technology, AI, automation, and marketing into one powerful ecosystem to help businesses grow smarter while reducing operational costs.",
     images: [
       {
-        url: "https://images.prismic.io/staticmania/aPD-K55xUNkB2D2X_og-image.jpg",
+        url: "/images/00001.png",
         width: 1200,
         height: 630,
         alt: "Rozdi Agency - Outsource Enterprise Technology & Marketing",
@@ -29,7 +30,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Rozdi Agency || Enterprise-Grade Technology & Marketing",
     description: "Rozdi helps businesses outsource world-class technology, AI automation, and marketing services at an affordable cost.",
-    images: ["https://images.prismic.io/staticmania/aPD-K55xUNkB2D2X_og-image.jpg"],
+    images: ["/images/00001.png"],
   },
   robots: "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
   manifest: "/site.webmanifest",
